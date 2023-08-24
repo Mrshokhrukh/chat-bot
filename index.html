@@ -1,15 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Flow+Circular&family=Lobster&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Rubik:wght@300;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-   
+    <div class="chatbot">
+        <header>
+            <h1>chat bot</h1>
+        </header>
+
+
+        <ul class="chat_box">
+            <li class="chat bot_incoming">
+                <span class="chat_icon">
+                    <lottie-player src="https://lottie.host/eef81657-ed96-413c-8cf1-9b722ed1baac/6dHauPLm28.json"
+                        background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                        autoplay></lottie-player>
+                </span>
+
+                <p>Hi there</p>
+            </li>
+            <li class="chat bot_outgoing">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span><ion-icon name="person-circle-outline"></ion-icon></span>
+            </li>
+        </ul>
+        <div class="chat_input">
+            <textarea name="" id="" placeholder="Enter a message"></textarea>
+            <span class="send_btn">
+                <ion-icon name="send-outline"></ion-icon>
+            </span>
+        </div>
+    </div>
 </body>
+
 </html>
