@@ -11,6 +11,28 @@ li {
 
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+    background: rgba(1, 46, 90, 0.514);
+    border-radius: 5px;
+
+
+    &:hover {
+        background: rgba(2, 63, 124, 0.514);
+    }
+}
+
 
 body {
     height: 100vh;
@@ -42,6 +64,7 @@ body {
 .chat_box {
     height: 550px;
     padding: 20px;
+    overflow-x: hidden;
 
     .chat {
         display: flex;
@@ -79,6 +102,9 @@ body {
 }
 
 .chat_input {
+
+    position: relative;
+    z-index: 10;
     border-top: 1px solid rgb(230, 230, 230);
     padding: 16px 20px 0;
     display: flex;

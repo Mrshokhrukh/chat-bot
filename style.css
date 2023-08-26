@@ -1,1 +1,111 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(1, 46, 90, 0.514);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 63, 124, 0.514);
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+}
+
+.chatbot {
+  position: relative;
+  background-color: white;
+  width: 550px;
+  height: auto;
+  border-radius: 15px;
+  border: 0.5px solid rgba(128, 128, 128, 0.377);
+}
+
+.chatbot header {
+  background-color: rgb(52, 149, 247);
+  text-align: center;
+  padding: 9px 0;
+  width: 100%;
+  color: black;
+  border-radius: 15px 15px 0 0;
+}
+
+.chat_box {
+  height: 550px;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.chat_box .chat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.chat_box .chat p {
+  max-width: 75%;
+  background-color: rgb(228, 228, 228);
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  color: black;
+}
+.chat_box .bot_outgoing {
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+.chat_box .bot_outgoing span {
+  padding-top: 5px;
+  font-size: 28px;
+  color: gray;
+}
+.chat_box .bot_outgoing p {
+  border-radius: 10px 10px 0px 10px;
+  background-color: rgb(52, 149, 247);
+  color: white;
+}
+
+.chat_input {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgb(230, 230, 230);
+  padding: 16px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat_input textarea {
+  resize: none;
+  width: 88%;
+  border: none;
+  outline: none;
+  font-size: 18px !important;
+  font-family: Poppins !important;
+}
+.chat_input span {
+  font-size: 28px;
+  cursor: pointer;
+}
+.chat_input span:hover {
+  color: rgb(52, 149, 247);
+}/*# sourceMappingURL=style.css.map */
